@@ -41,6 +41,7 @@ footer h3 {
 
 @media (max-width: 500px) {
   footer {
+    background-color: black;
     /* display: none; */
   }
   .footerAlternative {

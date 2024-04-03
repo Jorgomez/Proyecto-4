@@ -7,7 +7,7 @@ const data = {
   address: 'Rua Otero Pedrayo, Nigrán, Spain',
   email: 'Jorgomez@protonmail.com',
   aboutMe:
-    "I'm a passionate photographer, web developer, and journalist with a diverse educational background. I hold a Bachelor's degree in Science, a Web Development Certification, and a Master's in Journalism. My work experience includes capturing exclusive images as a photographer, developing web applications, and reporting on news stories. I'm committed to continuous learning and contributing to both the digital world and quality journalism.",
+    '“The motivation to explore new places led me to take challenges. And now Im studing web development as a tool to achieve my life goals. In this field I have found a huge and dynamic world, which I am very interested in continuing to explore. I am currently looking for those new challenges that will allow me to contribute with the skills acquired during my personal and professional life.',
 
   education: {
     degree: 'Bachelor  Public Management',

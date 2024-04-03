@@ -41,7 +41,7 @@ footer h3 {
 
 @media (max-width: 500px) {
   footer {
-    display: none;
+    /* display: none; */
   }
   .footerAlternative {
     height: 15svh;

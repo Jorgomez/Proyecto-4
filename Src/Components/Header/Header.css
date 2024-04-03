@@ -48,6 +48,7 @@ header {
   border-radius: var(--border-radius-m);
   padding: 7px;
   border: none;
+  color: black;
 }
 
 .boxSwitcher2 {
@@ -134,9 +135,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgba(153, 153, 153, 0.409);
+    background-color: rgba(153, 153, 153, 0.56);
     position: absolute;
-    height: 125%;
+    height: 135%;
     width: 100%;
     top: 15svh;
     right: 0;

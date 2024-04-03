@@ -72,6 +72,7 @@
   border: 1px solid rgba(0, 0, 0, 0.207);
   background-color: var(--color1-background);
   cursor: pointer;
+  color: black;
 }
 .boxProyects {
   margin: auto;

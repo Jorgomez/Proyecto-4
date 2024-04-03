@@ -2,7 +2,6 @@
   width: 100%;
   /* min-height: 80svh; */
   min-height: 75svh;
-  position: relative;
 
   /* background-color: aqua; */
 }
@@ -246,7 +245,7 @@
 
   #mainInfo h1 {
     font-size: 35px;
-    color: var(--text-color2);
+    color: var(--text-color1);
     font-weight: 500;
   }
   #mainInfo p {

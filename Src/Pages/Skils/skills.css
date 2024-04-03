@@ -6,10 +6,13 @@
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  min-height: 90svh;
+  min-height: fit-content;
   background-color: var(--color1-background);
   gap: var(--spacing-xl);
-  padding-bottom: 10%;
+
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-bottom: 5%;
 }
 
 #skillsSection > h1 {

@@ -1,5 +1,4 @@
 footer {
-  margin: auto;
   text-align: center;
   bottom: 0;
   height: 10svh;
@@ -35,11 +34,16 @@ footer h3 {
 }
 .footerAlternative {
   background-color: black;
+  bottom: 0;
+  height: 12svh;
+  display: flex;
 }
 
 @media (max-width: 500px) {
   footer {
     display: none;
-    height: 12svh;
+  }
+  .footerAlternative {
+    height: 15svh;
   }
 }

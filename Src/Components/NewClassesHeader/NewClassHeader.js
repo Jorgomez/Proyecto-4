@@ -9,7 +9,7 @@ export const addNewClassestoHeader = () => {
     document.querySelector('.boxSwitcher').classList.add('displayNone')
     document.querySelector('.logo').classList.add('displayNone')
     document.querySelector('.logoMovile').classList.add('display')
-    document.querySelector('footer').classList.add('display')
+    // document.querySelector('footer').classList.add('display')
     document.querySelector('footer').classList.add('footerAlternative')
   }
 }

@@ -67,6 +67,7 @@ li {
   align-items: center;
 }
 button {
+  color: none;
   cursor: pointer;
 }
 /* .main {
@@ -100,7 +101,7 @@ button {
       var(--color2-background) 29%
     );
   }
-  #main {
-    height: 85%;
-  }
+  /* #main {
+    min-height: 85%;
+  } */
 }

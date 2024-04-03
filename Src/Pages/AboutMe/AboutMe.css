@@ -5,8 +5,9 @@
   justify-content: start;
   width: 100%;
   height: 90svh;
-  flex-grow: 3;
+
   background-color: var(--color1-background);
+  margin-top: auto;
 }
 
 #sectionAboutMe {
@@ -38,7 +39,6 @@
   flex-direction: column;
   justify-content: space-around;
   margin-top: 2%;
-
   align-items: center;
   height: fit-content;
 }
@@ -82,6 +82,9 @@
   width: 80%;
   font-size: 13px;
 }
+#sectionServices img {
+  margin-bottom: 5%;
+}
 
 @media (max-width: 650px) {
   #aboutMeSection {
@@ -115,7 +118,7 @@
   #sectionServices > div {
     margin-top: 10%;
     min-height: 400px;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
   }
 
   #sectionServices > div > article {
@@ -125,7 +128,10 @@
     width: 60%;
   }
   #sectionServices img {
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     width: 20%;
   }
+}
+
+@media (max-width: 500px) {
 }

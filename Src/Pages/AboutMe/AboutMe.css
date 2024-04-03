@@ -1,0 +1,131 @@
+#aboutMeSection {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  height: 90svh;
+  flex-grow: 3;
+  background-color: var(--color1-background);
+}
+
+#sectionAboutMe {
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#boxAboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 75%;
+}
+#boxAboutMe > h1 {
+  border: 2px solid;
+  padding: var(--spacing-m) var(--spacing-xl);
+}
+#boxAboutMe > p {
+  font-weight: 300;
+  width: 70%;
+  text-align: justify;
+}
+
+#sectionServices {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 2%;
+
+  align-items: center;
+  height: fit-content;
+}
+
+#sectionServices > h2 {
+  width: fit-content;
+  border: 1px solid;
+  padding: var(--spacing-s) var(--spacing-l);
+  font-size: medium;
+  font-weight: 600;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1%;
+}
+
+#sectionServices > div {
+  height: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#sectionServices > div > article {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 50%;
+  min-height: 120px;
+}
+
+#sectionServices > div > article > h3 {
+  font-size: small;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+#sectionServices > div > article > p {
+  font-weight: 300;
+  width: 80%;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  #aboutMeSection {
+    height: fit-content;
+    justify-content: space-between;
+  }
+  #sectionAboutMe {
+    min-height: 550px;
+  }
+  #boxAboutMe {
+    min-height: 400px;
+  }
+  #boxAboutMe > h1 {
+    border: 1px solid;
+  }
+
+  #boxAboutMe > p {
+    font-size: 15px;
+  }
+
+  #sectionAboutMe img {
+    width: 20%;
+  }
+  #sectionServices {
+    /* background-color: aqua; */
+    min-height: 500px;
+    justify-content: space-around;
+    margin-top: 7%;
+  }
+
+  #sectionServices > div {
+    margin-top: 10%;
+    min-height: 400px;
+    margin-bottom: 10%;
+  }
+
+  #sectionServices > div > article {
+    justify-content: space-around;
+    min-height: 200px;
+
+    width: 60%;
+  }
+  #sectionServices img {
+    margin-bottom: 10%;
+    width: 20%;
+  }
+}

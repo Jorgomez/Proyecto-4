@@ -1,0 +1,72 @@
+#contaMeSection {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 90svh;
+  background-color: var(--color1-background);
+  padding-bottom: 2%;
+}
+
+.boxTitle {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 25%;
+}
+.boxTitle h1 {
+  margin: auto;
+  width: fit-content;
+  border: 2px solid;
+  padding: var(--spacing-s) var(--spacing-l);
+  font-size: medium;
+  font-weight: 600;
+}
+.boxTitle p {
+  margin: auto;
+  width: 70%;
+  padding: var(--spacing-s) var(--spacing-l);
+  font-size: 13px;
+  font-weight: lighter;
+}
+.boxTitle img {
+  width: 15%;
+}
+
+.boxForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70%;
+  width: 50%;
+}
+.boxForm input {
+  padding: none;
+  height: 5%;
+  width: 100%;
+  background-color: var(--color1-background);
+}
+.boxForm input::placeholder {
+  font-size: 11px;
+  padding-left: 1%;
+}
+#comentario {
+  height: 30%;
+  background-color: var(--color1-background);
+}
+#comentario::placeholder {
+  font-size: small;
+  padding: 1%;
+}
+.boxForm button {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: var(--spacing-s) var(--spacing-m);
+  border: 1;
+  background-color: var(--contact-background-color);
+}

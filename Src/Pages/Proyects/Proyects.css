@@ -1,0 +1,83 @@
+#proyectsSection {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: fit-content;
+  flex-grow: 3;
+  background-color: var(--color1-background);
+  padding-bottom: 10%;
+}
+#proyectsSection > h1 {
+  margin: 10%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.boxProyects {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 70%;
+  gap: var(--spacing-l);
+}
+.cardProyects {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--contact-background-color);
+  height: fit-content;
+  width: 300px;
+  padding: var(--spacing-s);
+  border-radius: var(--border-radius-m);
+
+  background-color: rgba(245, 245, 245, 0.862);
+}
+
+.landingImage {
+  width: 100%;
+  border-radius: var(--border-radius-m);
+  transition: 1s;
+}
+.landingImage:hover {
+  transform: scale(1.1);
+}
+.boxInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: var(--spacing-s);
+  font-size: 10px;
+  padding: 5px;
+}
+.title {
+  font-weight: 600;
+}
+.description {
+  padding: var(--spacing-s);
+  font-size: small;
+  text-align: justify;
+}
+.repositoryButton {
+  font-size: 10px;
+  border: 1px solid;
+  margin-left: 70px;
+  border-radius: var(--border-radius-m);
+  padding: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.207);
+  background-color: var(--color1-background);
+  cursor: pointer;
+}
+.boxProyects {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 70%;
+  gap: var(--spacing-l);
+}

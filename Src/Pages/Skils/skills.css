@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#skillsSection {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 90svh;
+  background-color: var(--color1-background);
+  gap: var(--spacing-xl);
+  padding-bottom: 10%;
+}
+
+#skillsSection > h1 {
+  border: 2px solid;
+  padding: var(--spacing-m) var(--spacing-xl);
+  margin-top: 10%;
+  font-size: large;
+}
+#skillsSection section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  width: 60%;
+  min-height: 250px;
+}
+#skillsSection section h3 {
+  font-size: medium;
+  font-weight: 600;
+}
+#skillsSection section ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
+}
+
+#skillsSection section ul li {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#skillsSection section ul li img {
+  width: 70px;
+  height: 75px;
+}
+#skillsSection p {
+  font-size: small;
+}
+
+@media (max-width: 750px) {
+  #skillsSection #UsingNowSection {
+    min-height: 350px;
+
+    justify-content: space-around;
+  }
+
+  #skillsSection section {
+    gap: var(--spacing-xl);
+  }
+
+  #skillsSection ul {
+    justify-content: space-evenly;
+  }
+}

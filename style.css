@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --color1-background: #d7d7d7;
+  --color2-background: #000000;
+  --contact-background-color: #c4c4c4;
+  --text-color1: #000000;
+  --text-color2: #ffffff;
+  --text-color3: #909090;
+  --transparent: rgba(245, 245, 245, 0.862);
+
+  --spacing-xs: 3px;
+  --spacing-s: 5px;
+  --spacing-m: 10px;
+  --spacing-l: 20px;
+  --spacing-xl: 30px;
+  --spacing-xxl: 40px;
+  --spacing-section: 80px;
+
+  --border-radius-m: 15px;
+  --border-radius-l: 25px;
+  -border-radius-circle: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(
+    -80deg,
+    var(--color2-background) 50%,
+    /* rgba(86, 63, 57, 0.154) 51.5%, */ var(--color1-background) 50%
+  );
+}
+
+.bgBody2 {
+  background: linear-gradient(
+    -80deg,
+    var(--color1-background) 50%,
+
+    /* rgba(85, 65, 60, 0.308) 56%, */ var(--color2-background) 50%
+  );
+  color: var (--text-color3);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+}
+/* .main {
+  width: 100%;
+  height: 80svh;
+  flex-direction: column;
+} */
+
+@media (max-width: 850px) {
+  body {
+    background: linear-gradient(
+      -80deg,
+      var(--color2-background) 55%,
+      var(--color1-background) 45%
+    );
+  }
+
+  .bgBody2 {
+    background: linear-gradient(
+      -80deg,
+      var(--color1-background) 55%,
+      var(--color2-background) 45%
+    );
+  }
+}
+@media (max-width: 500px) {
+  body {
+    background: linear-gradient(
+      -15deg,
+      var(--color1-background) 25%,
+      var(--color2-background) 29%
+    );
+  }
+  /* #main {
+    height: 85svh;
+  } */
+}

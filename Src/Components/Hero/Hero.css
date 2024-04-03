@@ -1,0 +1,248 @@
+#heroSection {
+  width: 100%;
+  /* min-height: 80svh; */
+  min-height: 75svh;
+
+  /* background-color: aqua; */
+}
+
+#sectionInfo {
+  margin-left: 5%;
+  width: 50%;
+  height: 70%;
+  /* background-color: aqua; */
+  flex-direction: column;
+  justify-content: space-around;
+  flex-shrink: 1;
+  /* gap: var(--spacing-xl); */
+}
+
+#mainInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20%;
+  height: 50%;
+  width: 65%;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: var(--spacing-xl);
+  /* background-color: bisque; */
+}
+
+#mainInfo > h3 {
+  font-size: 25px;
+  font-weight: 400;
+}
+#mainInfo > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-m);
+}
+#mainInfo h1 {
+  font-weight: bolder;
+  font-size: 60px;
+  width: 100%;
+}
+#mainInfo p {
+  color: var(--text-color3);
+  font-size: large;
+}
+
+#ulContact {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 70%;
+  gap: 5%;
+}
+
+#ulContactMovileV {
+  display: none;
+}
+
+#ulContact li {
+  border: 1px solid rgba(128, 128, 128, 0.343);
+  padding: var(--spacing-s);
+  background-color: var(--contact-background-color);
+  border-radius: 50px;
+}
+
+#sectionPhoto {
+  /* background-color: aliceblue; */
+  height: 100%;
+  /* flex-grow: 1; */
+  margin-right: 2%;
+
+  /* background-color: aliceblue; */
+}
+
+#boxPhoto {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+
+  /* background-color: aqua; */
+}
+
+#boxPhoto > img {
+  /* height: 100%; */
+  border-radius: 150px;
+}
+
+.colorTextCahnge {
+  color: var(--text-color3);
+}
+@media (max-width: 850px) {
+  #mainInfo p {
+    width: 70%;
+  }
+}
+@media (max-width: 750px) {
+  /* #heroSection {
+    background-color: antiquewhite;
+  } */
+  #sectionInfo {
+    /* margin-top: 10%; */
+    margin-left: 3%;
+    width: 35%;
+    height: 60%;
+  }
+  #sectionPhoto {
+    /* background-color: aqua; */
+  }
+
+  #boxPhoto {
+    justify-content: end;
+    /* background-color: antiquewhite; */
+  }
+  #boxPhoto > img {
+    width: 90%;
+  }
+
+  #ulContact img {
+    width: 20px;
+  }
+
+  #mainInfo > h3 {
+    font-size: 15px;
+  }
+
+  #mainInfo h1 {
+    font-size: 45px;
+  }
+  #mainInfo p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+@media (max-width: 650px) {
+  #heroSection {
+    min-height: 75svh;
+  }
+}
+
+@media (max-width: 500px) {
+  #heroSection {
+    height: 85svh;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #sectionPhoto {
+    /* background-color: aqua; */
+    margin-top: 0;
+    height: 70%;
+    justify-content: center;
+    border-radius: none;
+    margin-right: 0px;
+  }
+
+  #boxPhoto {
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    height: 70%;
+    min-width: 70%;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  #boxPhoto > img {
+    width: fit-content;
+    border-radius: 0;
+  }
+
+  #sectionInfo {
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 40%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+    clip-path: polygon(0 45%, 100% 0, 100% 100%, 0 100%);
+    margin-top: -30px;
+    background-color: rgba(0, 0, 0, 0.56);
+  }
+
+  #mainInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    gap: 0;
+    height: 100%;
+    width: 80%;
+    padding-left: 12%;
+    margin-bottom: 15%;
+  }
+
+  #ulContact {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 5%;
+  }
+
+  #ulContactMovileV {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+    gap: 0;
+    margin-top: 10%;
+    margin-left: 0;
+    padding-right: 3%;
+  }
+
+  #ulContact {
+    display: none;
+  }
+
+  #ulContactMovileV img {
+    width: 23px;
+  }
+
+  #mainInfo > h3 {
+    /* width: 75%; */
+    color: var(--text-color2);
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  #mainInfo h1 {
+    font-size: 35px;
+    color: var(--text-color2);
+    font-weight: 500;
+  }
+  #mainInfo p {
+    color: var(--text-color2);
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}

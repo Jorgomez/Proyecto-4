@@ -100,7 +100,7 @@ button {
       var(--color2-background) 29%
     );
   }
-  /* #main {
-    height: 85svh;
-  } */
+  #main {
+    height: 85%;
+  }
 }

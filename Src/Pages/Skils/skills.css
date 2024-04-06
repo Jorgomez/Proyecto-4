@@ -6,11 +6,11 @@
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  min-height: fit-content;
+  min-height: 80svh;
   background-color: var(--color1-background);
   gap: var(--spacing-xl);
-
-  margin-top: auto;
+  /* 
+  margin-top: auto; */
   margin-bottom: auto;
   padding-bottom: 5%;
 }
@@ -18,7 +18,7 @@
 #skillsSection > h1 {
   border: 2px solid;
   padding: var(--spacing-m) var(--spacing-xl);
-  margin-top: 10%;
+  margin-top: 5%;
   font-size: large;
 }
 #skillsSection section {
@@ -50,7 +50,7 @@
   align-items: center;
 }
 #skillsSection section ul li img {
-  width: 70px;
+  width: auto;
   height: 75px;
 }
 #skillsSection p {

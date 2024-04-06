@@ -1,38 +1,24 @@
-import dataAssets from '../../Data/DataAssets/DataAssets'
 import { addNewClassestoHeader } from '../../Components/NewClassesHeader/NewClassHeader'
 import './skills.css'
+import data from '../../Data/DataCreator/Data'
 
-const skillsTemplate = () => {
-  return `
-  
-  <h1>SKILLS</h1>
-  <section class="" id="UsingNowSection">
-  <h3>USING NOW:</h3>
-  <ul class="">
-  <li><img src=${dataAssets.iconHTML}><p>HTML5</p></li>
-  <li><img src=${dataAssets.iconCSS}><p></p>CSS3</li>
-  <li><img src=${dataAssets.iconJS}><p>JAVASCRIPT</p></li>
-  <li><img src=${dataAssets.iconGit3}><p>GIT</p></li>
-  <li><img src=${dataAssets.iconFigma}><p>FIGMA</p></li>
-  </ul>
-         </section >
-  <section class="" id="learningSection">
-         <h3>LEARNING:</h3>
-         <ul class="">
-         <li><img src=${dataAssets.iconReact}><p>REACT</p></li>
-         <li><img src=${dataAssets.iconNode}><p>NODE</p></li>
-         <li><img src=${dataAssets.iconBootstrap}><p>MONGO</p></li>
-         <li><img src=${dataAssets.iconTS}><p>TYPESCRIPT</p></li>
-         
-         </ul>
-</section >
-<section class="" id="othersSection">
-<h3>OTHER SKILLS :</h3>
-<ul class="">
-<li><img src=${dataAssets.iconEnglish}><p>ENGLISH intermedio</p></li>
-<li><img src=${dataAssets.iconSpanish}><p>ESPAÑOL nativo</p></li>
-</ul>
-</section >`
+const skillsTemplate = (section) => {
+  section.innerHTML += `<h1>SKILLS</h1>`
+  for (const array in data.skills) {
+    const sectionSkillType = document.createElement('section')
+    sectionSkillType.id = array + 'Section'
+    const titleSectionSkill = document.createElement('h3')
+    titleSectionSkill.textContent = array
+    const ulBoxIcon = document.createElement('ul')
+
+    for (const element of data.skills[array]) {
+      ulBoxIcon.innerHTML += ` <li class="boxIcons"><img src=${element.icon}><p>${element.skill}</p></li>
+    `
+    }
+
+    sectionSkillType.append(titleSectionSkill, ulBoxIcon)
+    section.append(sectionSkillType)
+  }
 }
 
 export const printskillsTemplate = () => {
@@ -40,7 +26,7 @@ export const printskillsTemplate = () => {
   const sectionSkills = document.createElement('section')
   sectionSkills.className = 'flexContainer'
   sectionSkills.id = 'skillsSection'
-  sectionSkills.innerHTML = skillsTemplate()
+  skillsTemplate(sectionSkills)
   main.append(sectionSkills)
   addNewClassestoHeader()
 }

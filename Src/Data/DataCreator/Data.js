@@ -42,23 +42,57 @@ const data = {
   ],
   skills: {
     Using: [
-      'HTML5',
-      'CSS3',
-      'JavaScript',
-      'Git',
-      'Vite',
-      'Figma',
-      'Visual Studio'
+      {
+        skill: 'HTML5',
+        icon: 'https://res.cloudinary.com/digcf0lad/image/upload/v1711892032/Portafolio/Group_12_iyse6c.png'
+      },
+      {
+        skill: 'CSS3',
+        icon: 'https://res.cloudinary.com/digcf0lad/image/upload/v1711892033/Portafolio/Group_13_hvvvts.png'
+      },
+      {
+        skill: 'JavaScript',
+        icon: 'https://res.cloudinary.com/digcf0lad/image/upload/v1711892032/Portafolio/Group_2_erv5bk.png'
+      },
+      {
+        skill: 'Git',
+        icon: 'https://res.cloudinary.com/digcf0lad/image/upload/v1711892032/Portafolio/git_flvtte.png'
+      },
+      {
+        skill: 'Figma',
+        icon: 'https://res.cloudinary.com/digcf0lad/image/upload/v1711892032/Portafolio/figma_qhkoxk.png'
+      }
     ],
-    learning: [
-      'React',
-      'Node.js',
-      'Express.js',
-      'MongoDB',
-      'RESTful API',
-      'Frontend and Backend Development'
+    Learning: [
+      {
+        skill: 'REACT',
+        icon: 'https://res.cloudinary.com/digcf0lad/image/upload/v1711892033/Portafolio/Group_14_qze7jj.png'
+      },
+      {
+        skill: 'NODE',
+        icon: 'https://res.cloudinary.com/digcf0lad/image/upload/v1711892032/Portafolio/Group_1_pr9ks9.png'
+      },
+      {
+        skill: 'MONGO',
+        icon: 'https://res.cloudinary.com/digcf0lad/image/upload/v1712014176/bootstrap_z8lond.svg'
+      },
+      {
+        skill: 'TYPESCRIPT',
+        icon: 'https://res.cloudinary.com/digcf0lad/image/upload/v1711892032/Portafolio/Group_3_u02q6q.png'
+      }
+    ],
+    Others: [
+      {
+        skill: 'ENGLISH',
+        icon: 'https://res.cloudinary.com/digcf0lad/image/upload/v1711893212/Portafolio/image_18_nbqydv.png'
+      },
+      {
+        skill: 'SPANISH',
+        icon: 'https://res.cloudinary.com/digcf0lad/image/upload/v1711892033/Portafolio/image_19_koytzg.png'
+      }
     ]
   },
+
   projects: [
     {
       title: 'E-commerce Website',

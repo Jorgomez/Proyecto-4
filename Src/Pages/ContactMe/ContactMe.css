@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
-  height: 90svh;
+  min-height: 80svh;
   background-color: var(--color1-background);
   padding-bottom: 2%;
   margin-top: auto;
@@ -12,12 +12,12 @@
 }
 
 .boxTitle {
-  margin-top: 10%;
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 25%;
+  height: 150px;
 }
 .boxTitle h1 {
   margin: auto;
@@ -42,12 +42,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 70%;
+  min-height: 380px;
   width: 50%;
 }
 .boxForm input {
   padding: none;
-  height: 5%;
+  min-height: 35px;
   width: 100%;
   background-color: var(--color1-background);
 }
@@ -56,7 +56,7 @@
   padding-left: 1%;
 }
 #comentario {
-  height: 30%;
+  min-height: 150px;
   background-color: var(--color1-background);
 }
 #comentario::placeholder {
@@ -69,6 +69,16 @@
   margin-right: auto;
 
   padding: var(--spacing-s) var(--spacing-m);
-  border: 1;
-  background-color: var(--contact-background-color);
+  background-color: var(--color1-background);
+  border-radius: 15px;
+  box-shadow: inset 0 0 0 0 #000000;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.boxForm button:hover {
+  box-shadow: inset 400px 50px 0 0 #000000;
+  color: aliceblue;
+  font-weight: 200;
 }

@@ -3,38 +3,30 @@ import data from '../../Data/DataCreator/Data'
 import { addNewClassestoHeader } from '../../Components/NewClassesHeader/NewClassHeader'
 import './AboutMe.css'
 
-const aboutMeTemplate = () => {
-  return `<section class="" id="sectionAboutMe">
-    <article id="boxAboutMe">
-             <h1>ABOUT ME</h1>
-             <p>${data.aboutMe}</p>
-  </article>
-
-   <img src=${dataAssets.separator} alt="separator img">
-    </section >
-
-    <section id="sectionServices">
-    <h2>SERVICES</h2>
-
-    <div>
-    <article class="flexContainer services" id="boxDesign">
-             <h3>${data.services[0].service}</h3>
-             <p>${data.services[0].description}</p>
-  </article>
-
-  <article class="flexContainer services" id="boxDevelopment">
-  <h3>${data.services[1].service}</h3>
-  <p>${data.services[1].description}</p>
+const aboutMeTemplate = (section) => {
+  section.innerHTML += `<section class="" id="sectionAboutMe">
+  <article id="boxAboutMe">
+           <h1>ABOUT ME</h1>
+           <p>${data.aboutMe}</p>
 </article>
 
-<article class="flexContainer services" id="boxMaintence">
-<h3>${data.services[2].service}</h3>
-<p>${data.services[2].description}</p>
-</article>
-</div>
-   <img src=${dataAssets.separator} alt="separator img">
+ <img src=${dataAssets.separator} alt="separator img">
+  </section >`
 
-</section >`
+  const sectionServices = document.createElement('section')
+  sectionServices.className = 'sectionServices'
+  sectionServices.innerHTML += `<h2>SERVICES</h2>`
+
+  for (let i = 0; i < data.services.length; i++) {
+    sectionServices.innerHTML += ` <article class="flexContainer services" id="boxDesign">
+  <h3>${data.services[i].service}</h3>
+  <p>${data.services[i].description}</p>
+</article>`
+  }
+
+  sectionServices.innerHTML += ` <img src=${dataAssets.separator} alt="separator img">`
+
+  section.append(sectionServices)
 }
 
 export const printAboutMeTemplate = () => {
@@ -42,7 +34,7 @@ export const printAboutMeTemplate = () => {
   const sectionAboutMe = document.createElement('section')
   sectionAboutMe.className = 'flexContainer'
   sectionAboutMe.id = 'aboutMeSection'
-  sectionAboutMe.innerHTML = aboutMeTemplate()
+  aboutMeTemplate(sectionAboutMe)
   main.append(sectionAboutMe)
   addNewClassestoHeader()
 }
